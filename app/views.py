@@ -10,6 +10,7 @@ from django.db.models import Q
 import pandas as pd
 
 
+ 
 def ask_openai(message):
     response = openai.ChatCompletion.create(  
         model="gpt-3.5-turbo",  
