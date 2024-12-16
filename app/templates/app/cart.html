@@ -1,0 +1,441 @@
+{% load static%}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+       
+      
+        <title>webbanhangonlie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{% static 'app/css/style.css' %}" rel="stylesheet" />
+        <link href="{% static 'app/css/owl.carousel.min.css' %}" rel="stylesheet" />
+        <link href="{% static 'app/css/all.min.css' %}" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+      <style>
+        body {
+            font-family: "Inria Serif", serif;
+            color: #5B6CA9; 
+        }
+      </style>
+      
+        <style>
+         
+          * {
+            box-sizing: border-box;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        .container{
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+      </style>
+
+      <style>
+        .header {
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+          
+      }
+      .section-one {
+           padding: 118px 0 20px 0; /* top-right-bot-left */
+       }
+      
+       .header-main {
+          background: #ffff;
+       }
+      
+      .header-top {
+          background: #103178;
+          color: #FFC800;
+          font-size: 18px;
+          padding: 10px;
+          text-align: center;
+      }
+      
+      .header-main .inner-logo a{
+          color: #103178;
+          display: flex;
+          align-items: center;
+      } 
+      
+      .header-main .inner-wrap{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 0;
+      }
+      
+      .header-main .inner-logo img{
+          height: 48px;
+          width: auto;
+          margin-right: 10px;
+      }
+      
+      .header-main .inner-logo span{
+          font-size: 22px;
+          font-weight: 600;
+      }
+      
+      .header-main .inner-menu ul {
+          margin:0 ;
+          padding :0;
+          list-style-type: none;
+          display: flex;
+      }
+      
+      .header-main .inner-menu ul li  {
+          margin-left: 15px;
+          margin-right: 15px;
+          
+      } 
+      
+      .header-main .inner-menu ul li a {
+          color: #103178;
+          font-size: 18px;
+      
+      }
+      
+      .header-main .inner-contact {
+          font-size: 18px;
+          color: #5B6CA9;
+      }
+      
+      .header-main .inner-social ul {
+          margin:0 ;
+          padding :0;
+          list-style-type: none;
+          display: flex;
+      }
+      
+      .header-main .inner-social ul li {
+          margin-left: 15px;
+      }
+      
+      .header-main .inner-social ul li a {
+          color: #103178;
+          font-size: 26px;
+      }
+      .header-main .inner-menu-mobi {
+          display: none;
+      }
+      </style>
+
+    <style>
+    .button{
+        background: #5B6CA9;
+        color: #fff;
+        padding: 11px 26px;
+        font-size: 10px;
+        border-radius: 45px;
+        border: 2px solid #5B6CA9;
+        display: inline-block;
+        
+    }
+    .button:hover {
+        color: #5B6CA9;
+        background: #fff;
+    }
+    .button-two {
+        background: #FFC800;
+        border-color: #FFC800;
+    }
+    .button-two:hover{
+        color: #FFC800;
+    }
+    .button-one {
+        background: #103178;
+        border-color: #103178;
+    }
+    .button-two:hover{
+        color: #FFC800;
+    }
+    </style>
+
+
+    <style>
+      .find{
+        background: white;
+        padding: 0px 0px 0px;
+        display: inline-block;
+        position: relative;
+        right: -388px;
+    }    
+    </style>
+
+    <style>
+        .inner-contact {
+            font-size: 18px;
+            color: #5B6CA9;
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            background-color: #103178; 
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 30px; 
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); 
+            transition: all 0.3s ease; 
+        }
+        
+        .inner-contact:hover {
+            background-color: #FFC800; 
+            color: #103178; 
+            cursor: pointer; 
+            box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15); 
+        }
+        
+        .inner-contact a {
+            color: inherit; 
+            text-decoration: none; 
+        }
+        
+    </style>
+
+    <style>
+        
+        body {
+            font-family: "Inria Serif", serif;
+            color: #5B6CA9;
+        }
+        .box-element {
+            margin-top: 123px;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+        }
+        .btn-outline-dark {
+            background-color: transparent;
+            border-color: #343a40;
+            color: #343a40;
+        }
+        .btn-outline-dark:hover {
+            background-color: #343a40;
+            color: white;
+        }
+
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+
+      
+        .table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .table th, .table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #f1f1f1;
+        }
+
+        .table td {
+            font-size: 16px;
+        }
+
+       
+        .cart-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .cart-row img {
+            width: 20px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .cart-row p {
+            margin: 0;
+        }
+
+       
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80px;
+        }
+
+        .chg-quantity {
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+    
+        .cart-row:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .cart-row:hover {
+            background-color: #f1f1f1;
+        }
+
+       
+        .cart-row.header {
+            font-weight: bold;
+            background-color: #f1f1f1;
+            padding: 10px 0;
+        }
+
+        .cart-row-total {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        .cart-row-total strong {
+            font-weight: bold;
+        }
+
+        .cart-row img.row-image {
+            width: 170px;
+            height: auto;     
+            object-fit: cover; 
+            border-radius: 8px;  
+        }
+        
+
+    </style>
+      
+     <!-- Header -->
+    <header class="header">
+      <div class="header-top">BÀI TẬP DỰ ÁN NHÓM 7</div>
+      <div class="header-main">
+          <div class="container">
+              <div class="inner-wrap">
+                  <div class="inner-logo">
+                      <a href="/">
+                        <img src="{% static 'app/images/anhgiohang.png' %}" alt="My Image" />
+                          <span>SHOP</span>
+                      </a>
+                  </div>
+                  <div class="inner-menu">
+                      <ul>
+                          <li>
+                              <a href="#">
+                                  FOOD
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  BOOK
+                              </a>
+                          </li>
+                          <li>
+                              <a href="#">
+                                  LAP
+                              </a>
+                          </li>
+                          
+                      </ul>
+                  </div>
+                  
+                  <div class="inner-social">
+                      <span>{{request.user}} </span>
+                      <span><a href = "{% url 'logout'%}" > Logout </a></span>
+                  </div>
+                  <div class="inner-menu-mobi">
+                      <i class="fa-solid fa-bars"></i>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- endHeader -->
+  
+  {% comment %} cart  {% endcomment %}
+  <div class="row">
+	<div class="col-lg-12">
+		<div class="box-element">
+
+			<a  class="btn btn-outline-dark" href="{% url 'home' %}">&#x2190;</a>
+
+			<br>
+			<br>
+			<table class="table">
+				<tr>
+					<th><h5>Items: <strong>{{order.get_cart_items}}</strong></h5></th>
+					<th><h5>Total:<strong> {{order.get_cart_total}}</strong></h5></th>
+					<th>
+						<a  style="float:right; margin:5px;" class="btn btn-success" href="{% url 'checkout' %}">Checkout</a>
+					</th>
+				</tr>
+			</table>
+
+		</div>
+
+		<br>
+		<div class="box-element">
+			<div class="cart-row">
+				<div style="flex:2"></div>
+				<div style="flex:2"><strong>Item</strong></div>
+				<div style="flex:1"><strong>Price</strong></div>
+				<div style="flex:1"><strong>Quantity</strong></div>
+				<div style="flex:1"><strong>Total</strong></div>
+			</div>
+            {% comment %} items , order lấy bên view {% endcomment %}
+            {% for item in items %} 
+			<div class="cart-row">
+				<div style="flex:2"><img class="row-image" src="{{item.product.ImageURL}}"></div>
+				<div style="flex:2"><p>{{item.product.name}}</p></div>
+				<div style="flex:1"><p>{{item.product.price}}</p></div>
+				<div style="flex:1">
+					<p class="quantity">{{item.quantity}}</p>
+					<div class="quantity">
+						<img class="chg-quantity" src="{% static  'app/images/arrow-up.png' %}">
+				
+						<img class="chg-quantity" src="{% static  'app/images/arrow-down.png' %}">
+					</div>
+				</div>
+				<div style="flex:1"><p>$32</p></div>
+			</div>
+            {% endfor %}
+		</div>
+	</div>
+</div>
+  {% comment %} endcart {% endcomment %}
+  
+</html>
